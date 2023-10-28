@@ -1,0 +1,44 @@
+<!-- Coded with ❤ by PSteczka -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="qrcode.min.js"></script>
+    <title>Bilet ZTM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logos">
+            <div class="logo-container top-logo">
+                <img src="ztm.png" class="ztm-logo top-logo" alt="Logo ZTM">
+                <img src="ztm.png" class="ztm-logo bottom-logo" alt="Logo ZTM">
+            </div>
+        </div>
+        <div class="qr-code-container">
+            <div class="qr-code" id="qrCode"></div>
+        </div>
+        <div class="ticket-info left-align">
+            <p>Nazwa:</p>
+            <b>Lublin ZTM</b><br>
+            <p>Bilet:</p>
+            <b>Bilet elektroniczny 40-minutowy Normalny STREFA 1+2</b><br>
+            <div class="hidden-input">
+                <div class="input-label">Nr boczny pojazdu:</div>
+                <input class="input-value" id="vehicleNumber" type="text" style="border: none; outline: none;" maxlength="4">
+            </div>
+            <p>Ważny do:</p>
+            <b><span id="validUntil"></span></b><br>
+            <p>Numer bieżący:</p>
+            <b><span id="currentNumber"></span></b><br>
+            <p class="left-align">Numer kontrolny:</p>
+            <b><span id="controlNumber"></span></b><br><br>
+            <p class="left-align">Cena:</p>
+            <b>4,00 PLN</b><br>
+            <p class="left-align">Czas zakupu:</p>
+            <b><span id="purchaseTime"></span></b>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

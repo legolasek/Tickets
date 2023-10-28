@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code {
+    width: 256px;
+    height: 256px;
+    background-color: #fff;
+	margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.ztm-logo {
+    width: 80px;
+    position: absolute;
+    right: -10%; 
+    transform: translateY(-50%);
+    animation: scrollLogo 10s linear infinite; 
+}
+
+.ztm-logo.top-logo {
+    position: absolute;
+    top: 10px;
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ztm-logo.bottom-logo {
+    position: absolute;
+    bottom: 120px;
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@keyframes scrollLogo {
+    0% {
+        right: 110%; 
+    }
+    100% {
+        right: -10%; 
+    }
+}
+
+.hidden-input {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-value {
+    width: 100%;
+    padding-top: 10px;
+    font-size: 16px;
+    border-bottom: 1px dotted;
+    cursor: text;
+	font-weight: bold;
+}
+.left-align {
+    text-align: left;
+}
